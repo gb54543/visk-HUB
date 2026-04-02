@@ -1,0 +1,76 @@
+*{margin:0;padding:0;box-sizing:border-box}
+  color:#b0b0b0;
+  font-weight:600;
+  margin-bottom:18px;
+}
+.product-name{
+  font-size:22px;
+  font-weight:700;
+  line-height:1.2;
+  margin-bottom:12px;
+}
+.product-price{
+  color:var(--red);
+  font-size:18px;
+  font-weight:800;
+}
+.info-box{
+  max-width:760px;
+  margin:0 auto;
+  background:#fff;
+  border:1px solid #ececec;
+  border-radius:28px;
+  overflow:hidden;
+}
+.action-row{
+  padding:18px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+  border-bottom:1px solid #f0f0f0;
+}
+.action-btn{
+  height:64px;
+  border-radius:16px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:700;
+  font-size:20px;
+}
+.action-btn.primary{background:var(--red);color:#fff;box-shadow:var(--shadow)}
+.action-btn.secondary{background:#f9f9f9;color:#555;border:1px solid #e5e5e5}
+.info-grid{
+  padding:22px 18px 18px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+}
+.info-item{
+  border:1px solid #ececec;
+  border-radius:16px;
+  padding:18px;
+  background:#fafafa;
+}
+.info-item strong{display:block;font-size:18px;margin-bottom:5px}
+.info-item span{color:#9a9a9a;font-size:14px}
+@media (max-width:1024px){.products-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:860px){
+  .top-nav{padding:0 70px;gap:18px;font-size:14px}
+  .headline{font-size:28px}
+  .cta{min-width:260px;height:60px;font-size:22px}
+  .bottom-chip{font-size:14px}
+  .action-row,.info-grid{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  .top-nav{padding:0 20px;gap:12px;font-size:13px;margin-top:76px}
+  .brand-icon{width:78px;height:78px;margin-bottom:20px}.brand-icon span{font-size:34px}
+  .social-row{flex-direction:column;gap:10px}
+  .headline{font-size:24px}
+  .subtext{font-size:13px;line-height:1.5}
+  .chip,.bottom-chip{font-size:13px;padding:10px 14px}
+  .cta{min-width:100%;width:100%;font-size:20px}
+  .divider-block{padding-bottom:60px}
+  .products-grid{grid-template-columns:1fr}
+  .product-name{font-size:20px}
+}
